@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Example</title>
+</head>
+<body>
+    <h1>This is the example template</h1>
+    <div>
+        <p>blah blah blah</p>
+        <a href="https://www.google.com">google</a>
+    </div>
+    <h2>Variables</h2>
+    {% if myvar %}
+    <p>The varialbe passed in is: {{ myvar }}</p>
+    {% else %}
+
+    {% endif %}
+
+    <div>
+        {% for link in links %}
+            <a href="{{ link }}">Here is a link</a>
+        {% endfor %}
+    </div>
+    
+</body>
+</html>
